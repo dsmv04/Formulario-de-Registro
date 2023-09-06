@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <form>
+            <h2>Formulario de Registro</h2>
+            <div>
+                <label for="nombre"> Nombre: * </label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div>
+                <label for="apellido"> Apellido: * </label>
+                <input type="text" name="apellido" id="apellido">
+            </div>
+            <div>
+                <label for="email"> Email: * </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="password"> Password: * </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="fechaNacimiento"> Fecha de nacimiento: </label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" >
+            </div>
+            <div>
+                <label> Selecciona tu género: </label>
+                <div>
+                     <label for="masculino"> Masculino: </label>
+                     <input type="radio" id="masculino" name="genero" value="masculino">
+                     <label for="femenino"> Femenino: </label>
+                     <input type="radio" id="femenino" name="genero" value="femenino">
+                     <label for="nobinario"> No binario: </label>
+                     <input type="radio" id="nobinario" name="genero" value="nobinario">
+                     <label for="otro"> Prefiero no responder: </label>
+                     <input type="radio" id="otro" name="genero" value="otro">
+                </div>
+            </div>
+            <div>
+                <label for="comentario"> Una breve descripción sobre mí: </label>
+                <div>
+                    <textarea id="comentario" name="comentario"></textarea>
+                </div>                
+            </div>
+            <div>
+                <label for="lenguaje"> Lenguaje Favorito: </label>
+                <select id="lenguaje" name="lenguaje">
+                    <option value="JS"> JavaScript </option>
+                    <option value="Py"> Python </option>
+                    <option value="JV"> Java </option>
+                    <option value="C"> C# </option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="consentimiento" name="consentimiento" value="consentimiento">
+                <label for="consentimiento"> 
+                    Sí, me gustaría recibir actualizaciones periódicas por correo electrónico  </label>
+            </div>
+            <div>
+                <button type="submit" id="enviar">
+                    Crear Cuenta
+                </button>
+            </div>
+            <div>
+                <label>* Indica un campo obligatorio</label>
+            </div>
+    </form>
+    
+</body>
+</html>
